@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: white;
+    background: black;
+}
+
+
+
+/* Utility classes *************************************/
+.inlineBlock {
+    display: inline-block;
+}
+
+.posRel{
+    position: relative;
+}
+
+.fa-play, .fa-pause {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.padHoz10px {
+    padding: 0 10px;
+}
+
+.alignRight {
+    text-align: right;
+}
+
+.hidden{
+    display: none !important;
+}
+
+
+
+/* header ************************************************/
+header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    padding: 0 30px;
+    z-index: 10;
+}
+
+header p {
+    position: relative;
+    /* margin-left: 30px; */
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* music player *********************************************/
+#musicPlayer {
+    /* background: rgb(140, 0, 0); */
+    display: inline-block;
+    position: absolute;
+    height: 100%;
+    padding: 0 20px;
+    margin-left: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#musicPlayer img {
+    position: relative;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+}
+
+#musicPlayer p {
+    height: 100%;
+    position: relative; 
+    text-align: center;
+    top: 50%;
+    /* transform: translateY(-50%); */
+}
+
+#musicPlayer .fa-play, .fa-pause{
+    display: inline-block;
+    height: 100%;
+    font-size: inherit;
+    position: relative;
+    left: 0;
+    top: 50%;
+}
+
+
+
+/* shopping cart ********************************************/
+#shoppingCart {
+    background: rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+#shoppingCart:hover #cartItems{
+    display: block;
+}
+
+#cartBtn{
+    /* background: rosybrown; */
+    text-align: right;
+    width: 100%;
+    height: 50px;
+}
+
+#cartBtn p{
+    margin-right: 30px;
+}
+
+#cartItems{
+    position: relative;
+    /* background: khaki; */
+    display: none;
+}
+
+#cartItemsList li{
+    list-style:inside;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.fa-times{
+    color: red;
+    margin-left: 10px;
+}
+
+.fa-times:hover{
+    color: rgb(255, 130, 130);
+}
+
+.fa-times:active{
+    color: rgb(255, 0, 0);
+}
+
+#total {
+    margin-top: 20px;
+}
+
+
+
+#backgroundImg {
+    width: 100%;
+    position: relative;
+    top: 50px;
+    margin-bottom: 40px;
+    z-index: -1;
+}
+
+
+
+/* beats **********************************************************/
+#beats {
+    /* background: rgb(0, 164, 145, 0.6); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.card {
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    /* border: black solid 1px; */
+    background: rgba(255, 255, 255, 0.1);
+    width: 170px;
+}
+
+.card:hover{
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.card:hover .fa-play{
+    display: inline;
+}
+
+.fa-play:hover, .fa-pause:hover{
+    color: rgba(255, 255, 255, 0.496);
+}
+
+.fa-play:active, .fa-pause:active{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.card:hover .beatInfo i{
+    display: inline;
+}
+
+.card img {
+    width: 150px;
+}
+
+.beatInfo{
+    position: relative;
+}
+
+.beatInfo i{
+    /* background: cornflowerblue; */
+    position: absolute;
+    display: none;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    font-size: 30px;
+}
+
+.beatInfo i:hover{
+    color: rgba(255, 255, 255, 0.496);
+}
+
+.beatInfo i:active{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+
+/* footer **************************************************************/
+footer{
+    position: relative;
+    margin: 10px 0;
+    bottom: 0;
+    text-align: center;
+}

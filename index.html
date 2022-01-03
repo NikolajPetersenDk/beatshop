@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mobile.css">
+
+    <title>Sick Beats! | Purcell </title>
+</head>
+
+<body>
+    <div id="overlay" style="display: none;"></div>
+
+
+    <header>
+        <p id="headline">10 USD per Beat | Buy 2, get 3</p>
+
+        <!-- music player -->
+        <div id="musicPlayer" class="hidden">
+            <audio id="currentBeat" src="" preload="metadata"></audio>
+            <i id="playPauseBtn" class="fas"></i>
+            <img id="playerImg" src="./img/apocryphal2.png" alt="image">
+            <p>
+                Playing: 
+                <span id="currentSong">Apocryphal</span>
+                <span id="currentTime">1:20</span>/<span id="beatLength">3:39</span>
+            </p>
+        </div>
+
+        <!-- Shopping cart  -->
+        <div id="shoppingCart">
+
+                <!-- button -->
+                <div id="cartBtn" class="inlineBlock">
+                    <p>
+                        <i class="fas fa-shopping-cart padHoz10px"></i>
+                        <span id="cartBtnTxt"> Cart: <span class="totalAmount">0</span> USD </span>
+                    </p>
+                </div>
+                
+            <div id="cartItems">
+                <ul id="cartItemsList">
+
+                </ul>
+
+                <hr>
+
+                <div id="total" class="alignRight padHoz10px">
+                    <p>Total:</p>
+                    <p> <span class="totalAmount">0 </span> USD</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <img id="backgroundImg" src="./img/purcellsSofaNarrow.png">
+
+        <!-- beats -->
+        <div id="beats">            
+
+        </div>
+    </main>
+
+
+    <footer>
+        &copy; Purcell Beats 2021 | Nikolaj Petersen | nipedev@gmail.com
+    </footer>
+
+    <script src="beats.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
